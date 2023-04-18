@@ -30,7 +30,8 @@ Run the example. Note the usage of the parameters:
 - `--nv` : Invokes Nvidia driver initialization
 - `--app solver` : Calls the solver
 
-    
+Run:
+
     singularity run --nv --app solver ../mstar.sif
 
 
