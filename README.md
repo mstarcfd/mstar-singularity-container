@@ -30,7 +30,7 @@ Run the example. Note the usage of the parameters:
 - `--nv` : Invokes Nvidia driver initialization
 - `--app solver` : Helper alias to call the solver quickly. Removes existing results in `out/` directory, uses all GPUs, and writes log file. 
 
-Run:
+Run in an existing case directory with solver input files:
 
     singularity run --nv --app solver ../mstar.sif
 
