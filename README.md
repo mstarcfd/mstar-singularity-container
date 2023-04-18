@@ -28,11 +28,13 @@ Create an example case. Creates a new directory called `CASE`
 Run the example. Note the usage of the parameters:
 
 - `--nv` : Invokes Nvidia driver initialization
-- `--app solver` : Calls the solver
+- `--app solver` : Helper alias to call the solver quickly. Removes existing results in `out/` directory, uses all GPUs, and writes log file. 
 
 Run:
 
     singularity run --nv --app solver ../mstar.sif
 
 
+Or call with the solver command line:
 
+    singularity run --nv  ../mstar.sif mstar-cfd-mgpu -i input.xml -o out --gpu-auto
